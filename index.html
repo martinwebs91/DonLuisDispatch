@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Calculadora descargas</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="container">
+    
+<img class="logo" id="img" src="images/Logo_AXION_energy.jpg" alt="" width="80" height="80"/>
+
+<h3>Calculador Descargas</h3>
+  <form oninput="e.value = parseInt(a.value)+parseInt(f.value);d.value = parseInt(b.value)+parseInt(e.value);c.value = parseInt(g.value)-parseInt(b.value);">
+    
+   	 <h4>VOLUMEN A RECIBIR</h4>
+	   <input type="number" class="borde" name="a">
+	  
+   	<h4>PRE MEDICION</h4>
+	   <input type="number" class="borde" name="b">
+	   
+  	<h4>VACIO DISPONIBLE</h4>
+  	  <div class="borde2">
+     <output name="c" for="g b">0</output>
+      </div>
+	   <input type="hidden" name="g" value="37000">
+	  
+	   <h4>POST MEDICION</h4>
+	   <div class="borde2">
+    <output name="d" for="b x">0</output>
+     </div>
+     
+  	  <h4>VOLUMEN RECIBIDO</h4>
+  	 <div class="borde2">
+    <output name="e" for="a f">0</output>
+     </div>
+     
+	   <h4>DIFERENCIA GENERADA</h4>
+	    <input type="number" class="borde" name="f">
+	  
+	</form>
+	</div>
+</body>
+</html>
